@@ -1,0 +1,9 @@
+[Unit]
+Description=isli-scanner
+#Wants=isli-bar.service isli-icon.service isli-line.service
+Requires=isli-bar.service isli-icon.service isli-line.service
+[Service]
+Type=oneshot
+ExecStart=/bin/ls
+[Install]
+WantedBy=multi-user.target

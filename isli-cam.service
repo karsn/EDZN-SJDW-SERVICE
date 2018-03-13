@@ -1,0 +1,7 @@
+[Unit]
+Description=isli-cam
+[Service]
+Type=simple
+ExecStart=/root/camera/cam_out
+[Install]
+RequiredBy=isli-bar.service

@@ -1,0 +1,8 @@
+[Unit]
+Description=isli-icon
+Requires=isli-cam.service
+[Service]
+Type=simple
+ExecStart=/root/decode_srv/isli_icon_srv
+[Install]
+WantedBy=isli-scanner.service
